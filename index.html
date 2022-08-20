@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mural de Posts - Firestore</title>
+
+     <!-- fontawesome -->
+     <script src="https://kit.fontawesome.com/91dee05415.js" crossorigin="anonymous"></script>
+
+     <!-- css -->
+     <link rel="stylesheet" href="./styles/style.css">
+ 
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+     ">
+    
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Novo Post</h1>
+
+        <form action="" id="postForm">
+            <input type="text" placeholder="Título" id="titulo">
+            <input type="text" placeholder="Descrição" id="descricao">
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2 class="mt-4">Mural de posts</h2>
+        
+        <div id="lista">
+
+        </div>
+
+    </div>
+
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script defer  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+
+<script defer  src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+<script defer src="./init-firebase.js"></script>
+
+    <script defer src="./index.js"></script>
+</body>
+</html>
